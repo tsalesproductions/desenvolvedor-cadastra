@@ -12,7 +12,159 @@
 <body>
 
 </body>
-<h1>Desafio Cadastra</h1>
+
+<header>
+  <div class="container">
+    <a href="/">
+      <img src="./img/logo.png" alt="Cadastra">
+    </a>
+    <div class="cart">
+      <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <rect width="17" height="20" fill="url(#pattern0_2_13)"/> <defs> <pattern id="pattern0_2_13" patternContentUnits="objectBoundingBox" width="1" height="1"> <use xlink:href="#image0_2_13" transform="scale(0.0588235 0.05)"/> </pattern> <image id="image0_2_13" width="17" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAAvElEQVQ4Ea2TAQ0CMQxFnwQkIAUJSMAJOAAJOAAH4ORwAA4gb1lJLnAH6faTpXdt/9+6/MF3LIAtcAauNfpv/i8sK+kAnIBLjfuat/4T7uzaAUEwKhq1WZE1cAc2E13mH4B9k3B372EO1u37gDt4cTG/31Mr7sn66MTO+kwseW9kBILTT0QDhWomFgOuGkXk00VE42TGCE4xnsaJRCYW43UROTaexIdZXmZmjOAU12YtPxK5NY4zOE4opuMLN/z2esJif9wAAAAASUVORK5CYII="/> </defs> </svg>
+      <span class="qtd">0</span>
+      <div class="minicart">
+        <ul></ul>
+        <div class="totals">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container top">
+    <h1>Blusas</h1>
+    <div class="order" data-type="order">
+      <select name="orderBy" id="orderby" class="orderby">
+        <option selected disabled>Ordenar por:</option>
+        <option value="ReleaseDESC">Mais recentes</option>
+        <option value="priceASC">Menor preço</option>
+        <option value="priceDESC">Maior preço</option>
+      </select>
+    </div>
+  </div>
+  <div class="container list">
+    
+    <div class="product-filters">
+      <div class="product-filter">
+        <h3>CORES <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1L10 14L19 1.0135" stroke="#666666" stroke-linecap="round"/> </svg></h3>
+        <div class="filters" data-type="color">
+          <div class="item">
+            <input type="checkbox" id="Amarelo" name="Amarelo" value="Amarelo">
+            <label for="Amarelo">Amarelo</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Azul" name="Azul" value="Azul">
+            <label for="Azul">Azul</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Branco" name="Branco" value="Branco">
+            <label for="Branco">Branco</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Cinza" name="Cinza" value="Cinza">
+            <label for="Cinza">Cinza</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Laranja" name="Laranja" value="Laranja">
+            <label for="Laranja">Laranja</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Verde" name="Verde" value="Verde">
+            <label for="Verde">Verde</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Vermelho" name="Vermelho" value="Vermelho">
+            <label for="Vermelho">Vermelho</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Preto" name="Preto" value="Preto">
+            <label for="Preto">Preto</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Rosa" name="Rosa" value="Rosa">
+            <label for="Rosa">Rosa</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="Vinho" name="Vinho" value="Vinho">
+            <label for="Vinho">Vinho</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-filter">
+        <h3>TAMANHOS <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1L10 14L19 1.0135" stroke="#666666" stroke-linecap="round"/> </svg></h3>
+        <div class="filters" data-type="size">
+          <ul>
+            <li>P</li>
+            <li>M</li>
+            <li>G</li>
+            <li>GG</li>
+            <li>U</li>
+            <li>36</li>
+            <li>38</li>
+            <li>40</li>
+            <li>42</li>
+            <li>44</li>
+            <li>46</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product-filter">
+        <h3>FAIXA DE PREÇO <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1L10 14L19 1.0135" stroke="#666666" stroke-linecap="round"/> </svg></h3>
+        <div class="filters" data-type="price">
+
+          <div class="item">
+            <input type="checkbox" id="0-50" name="0-50" value="0-50">
+            <label for="0-50">R$0 - R$50</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="51-150" name="51-150" value="51-150">
+            <label for="51-150">R$51 - R$100</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="151-300" name="151-300" value="151-300">
+            <label for="151-300">R$151 - R$300</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="301-500" name="301-500" value="301-500">
+            <label for="301-500">R$301 - R$500</label>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="500" name="500" value="500">
+            <label for="500">a partir de R$500</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="product-list">
+      <div class="products"></div>
+
+      <div class="view-more-act">
+        <button class="view-more hidden">CARREGAR MAIS</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  CADASTRA: Implantação de E-commerce VTEX
+</footer>
 
 <script src="bundle.js"></script>
 

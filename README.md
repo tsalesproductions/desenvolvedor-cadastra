@@ -1,3 +1,43 @@
+# BUGS ENCONTRADOS E/ou CORREÇÕES
+- package.json tinha um n (Corrigido)
+- ao executar `npm start` ele retorna: `'node_modules' não é reconhecido como um comando interno` node 20+. 
+Atualizei o nome modules para
+```
+    "start": "npx cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server",
+```
+- Gulp atualizado para fazer o reload ao editar qualquer arquivo
+```js
+    // gulfile.js
+    styles: {
+        src: "src/scss/*",
+    },
+```
+- Alterado o target do tsconfig para `es2015`
+
+
+--------
+
+
+# Instruções/Requisitos para rodar o projeto modificado
+- Nodejs 20+
+- `npm install` e depois `gulp`
+
+
+# Observações
+- O projeto foi desenvolvido utilizando 100% DOM com js/ts, não foi usado nenhum framework ou algo do tipo. Inclusive na criação de filtros.
+- Tempo total de desenvolvimento: ~12h
+
+# Alguns outros projetos desenvolvidos:
+- https://www.casaegaragem.com.br/
+- https://www.mrshelby.com.br/
+- https://www.verve.com.br/
+- https://mr-poderosas-hair.lojaintegrada.com.br/
+
+
+
+----------
+
+
 # Venha ser um desenvolvedor da Cadastra
 
 Olá! Somos a Cadastra, uma Next-Gen Company que oferece soluções globais em marketing, tecnologia, estratégia de negócios, commerce, dados e analytics. Este desafio é voltado para o nosso Centro de Excelência (COE) de Commerce, especializado em implantação, migração, evolução e otimização de e-commerce.  Contamos com escritórios em 5 países, mas num formato de trabalho 100% home office.

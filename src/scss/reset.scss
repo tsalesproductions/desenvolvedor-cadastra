@@ -90,6 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -126,4 +127,24 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+@keyframes Ab {
+  0% {
+      transform: scale(.9) rotate3d(3,0,0,50deg);
+      opacity: 0
+  }
+
+  to {
+      transform: scale(1) rotateX(0)
+  }
 }

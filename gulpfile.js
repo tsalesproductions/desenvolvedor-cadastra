@@ -16,7 +16,8 @@ const paths = {
     watch: "src/ts/**/*.ts",
   },
   styles: {
-    src: "src/scss/main.scss",
+    src: "src/scss/*",
+    src_main: "src/scss/main.scss",
   },
   img: {
     src: "src/img/**/*",
@@ -41,7 +42,7 @@ function server() {
 }
 
 function styles() {
-  return src(paths.styles.src)
+  return src(paths.styles.src_main)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(
